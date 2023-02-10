@@ -13,7 +13,7 @@
                                     {{ $train->company }}
                                 </h5>
                                 <p>
-                                    From: {{ $train->departure_station }} to: {{ $train->arrival_station }}
+                                    From: {{ $train->departure_station }} <br> To: {{ $train->arrival_station }}
                                 </p>
                                 <p>
                                     Departure: {{ $train->departure_time }} Arrival: {{ $train->arrival_time }}
