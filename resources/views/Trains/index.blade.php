@@ -6,12 +6,24 @@
             <div class="row">
                 @forelse ($trains as $train)
                     <div class="col-3">
-                        <div class="card">
+                        <div class="card mb-4">
                             <img src="{{ Vite::asset('resources/assets/img/train.png') }}" alt="Train">
                             <div class="card-body">
-                                <h4>
+                                <h5>
                                     {{ $train->company }}
-                                </h4>
+                                </h5>
+                                <p>
+                                    From: {{ $train->departure_station }} to: {{ $train->arrival_station }}
+                                </p>
+                                <p>
+                                    Departure: {{ $train->departure_time }} Arrival: {{ $train->arrival_time }}
+                                </p>
+                                <p>
+                                    Train: {{ $train->train_code }}
+                                </p>
+                                <p>
+                                    Carriages: {{ $train->number_of_carriages }}
+                                </p>
                             </div>
                         </div>
                     </div>
