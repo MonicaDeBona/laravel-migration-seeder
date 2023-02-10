@@ -24,7 +24,7 @@ class TrainsTableSeeder extends Seeder
             $newTrainObject->departure_time = $faker->dateTime();
             $newTrainObject->arrival_time = $faker->dateTime();
             $newTrainObject->train_code = $faker->bothify('??-#####');
-            $newTrainObject->number_of_carriages = $faker->numberBetween(1, 15);
+            $newTrainObject->number_of_carriages = $faker->numberBetween(10, 15);
             $newTrainObject->on_time = $faker->boolean();
             $newTrainObject->deleted = $faker->boolean();
             $newTrainObject->save();

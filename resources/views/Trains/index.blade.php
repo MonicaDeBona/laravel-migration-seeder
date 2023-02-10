@@ -24,6 +24,11 @@
                                 <p>
                                     Carriages: {{ $train->number_of_carriages }}
                                 </p>
+                                <p>
+                                    @if ($train->deleted == true)
+                                        Status: DELETED
+                                    @endif
+                                </p>
                             </div>
                         </div>
                     </div>
